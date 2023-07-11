@@ -1,0 +1,4 @@
+button:hover {
+    background: rgb(255,83,121);
+    background: linear-gradient(55deg, rgba(255,83,121,1) 0%, rgba(255,103,62,1) 100%);
+}
