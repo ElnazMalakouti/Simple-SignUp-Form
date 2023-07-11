@@ -3,13 +3,14 @@ import Button from "../Button"
 const SignUpForm = () => {
     return (
         <>
-            <div className="w-full h-full flex flex-col gap-8">
+            <div className="w-full md:w-[90%] lg:w-[80%] xl:w-[60%] h-full md:h-[90%] lg:h-[80%] rounded-3xl bg-white md:py-4 md:px-2 flex flex-col md:flex-row gap-8">
 
-                <div className="w-full h-auto">
-                    <object data="/images/illustration-sign-up-mobile.svg" className="w-full h-auto"> </object>
+                <div className="w-full h-auto md:h-full order-1 md:order-2">
+                    <object data="/images/illustration-sign-up-mobile.svg" className="w-full h-auto md:hidden"> </object>
+                    <object data="/images/illustration-sign-up-desktop.svg" className="w-full h-auto max-h-full hidden md:block"> </object>
                 </div>
 
-                <div className="w-full h-full px-8 pb-4 flex flex-col gap-4">
+                <div className="w-full h-full md:h-auto md:my-auto px-8 pb-4 flex flex-col gap-4 order-2 md:order-1">
 
 
                     <p className="font-[Roboto-Bold] text-3xl">Stay Updated!</p>
