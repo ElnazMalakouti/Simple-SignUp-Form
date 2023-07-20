@@ -1,6 +1,6 @@
 import Button from "../Button"
 
-const Modal = ({ emailAddress, showModal, setShowModal }) => {
+const Modal = ({ emailInputValue, setEmailInputValue, showModal, setShowModal }) => {
     return (
         <>
             <div className={`${showModal ? 'flex' : 'hidden'} w-full md:w-80 h-full md:h-80 md:rounded-3xl py-8 px-4 md:px-8 bg-white flex-col justify-center items-start gap-8 md:gap-4`}>
@@ -11,13 +11,16 @@ const Modal = ({ emailAddress, showModal, setShowModal }) => {
 
                 <p className="text-sm md:text-xs">
                     A confirm email has been sent to  
-                    <span className="font-bold"> {emailAddress}</span>
+                    <span className="font-bold"> {emailInputValue}</span>
                     . Please open it and click the button inside to confirm your subscription.
                 </p>
 
                 <Button
                     classname={'mt-auto'}
-                    onClick={() => setShowModal(false)}
+                    onClick={() => {
+                        setShowModal(false)
+                        setEmailInputValue('')
+                    }}
                 >
                     Dismiss message
                 </Button>

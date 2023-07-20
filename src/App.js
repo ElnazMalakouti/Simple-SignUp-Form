@@ -20,7 +20,8 @@ function App() {
           setShowModal={setShowModal}
         />
         <Modal
-          emailAddress={emailInputValue}
+          emailInputValue={emailInputValue}
+          setEmailInputValue={setEmailInputValue}
           showModal={showModal}
           setShowModal={setShowModal}
         />

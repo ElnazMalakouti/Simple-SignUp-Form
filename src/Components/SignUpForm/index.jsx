@@ -1,6 +1,5 @@
 import { useState } from "react"
 import Button from "../Button"
-import Modal from "../Modal"
 
 const SignUpForm = ({ emailInputValue, setEmailInputValue, showModal, setShowModal }) => {
 
@@ -14,7 +13,7 @@ const SignUpForm = ({ emailInputValue, setEmailInputValue, showModal, setShowMod
 
         setEmailIsValid(isValidEmail)
 
-        if (isValidEmail && emailIsValid) {
+        if (isValidEmail) {
             setShowModal(true)
         } else {
             setShowModal(false)
