@@ -22,7 +22,7 @@ const SignUpForm = ({ emailInputValue, setEmailInputValue, showModal, setShowMod
 
     return (
         <>
-            <div className={`${showModal ? 'hidden' : 'flex'} w-full md:w-[90%] lg:w-[80%] xl:w-[60%] h-full md:h-[90%] lg:h-[80%] rounded-3xl bg-white md:py-4 md:px-2 flex-col md:flex-row gap-8`}>
+            <div className={`${showModal ? 'hidden' : 'flex'} w-full md:w-[90%] lg:w-[80%] xl:w-[60%] h-full md:h-[90%] lg:h-[80%] max-h-[80vh] rounded-3xl bg-white md:py-4 md:px-2 flex-col md:flex-row gap-8`}>
 
                 <div className="w-full h-auto md:h-full order-1 md:order-2">
                     <object data="/images/illustration-sign-up-mobile.svg" className="w-full h-auto md:hidden"> </object>
